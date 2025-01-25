@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dress Up Bubbleguy</title>
+    <meta charset="utf-8" />
+    <script src="controls.js"></script>
+  </head>
+
+  <body style="background-color: blue; position: relative">
+    <section
+      id="thegame"
+      style="height: 100%; width: 100%; background-color: pink"
+    >
+      <div
+        id="title"
+        style="
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          color: turquoise;
+        "
+      >
+        <h1>Dress up Bubbleguy</h1>
+      </div>
+      <div
+        id="gamewindow"
+        style="
+          width: 50%;
+          height: 100%;
+          /* padding: 20px; */
+          background-color: green;
+          position: absolute;
+          padding: 20px;
+          left: 25%;
+        "
+      >
+        <div
+          id="thepics"
+          style="
+            /* width: 80%; 
+          height: auto;  */
+            background-color: pink;
+          "
+        >
+          <div id="ogmiss" style="width: 100%">
+            <img
+              src="images/bubbleguy.webp"
+              alt="a bubbleguy"
+              style="width: 45%; position: absolute; z-index: 1"
+            />
+          </div>
+
+          <div style="width: 100%; background-color: red">
+            <img
+              src=""
+              alt=""
+              id="thebottom"
+              style="width: 45%; position: absolute; z-index: 2"
+            />
+          </div>
+
+          <div>
+            <img
+              src=""
+              alt=""
+              id="theacc"
+              style="width: 45%; position: absolute; z-index: 2"
+            />
+          </div>
+        </div>
+
+        <div
+          id="controls"
+          style="
+            background-color: brown;
+            margin: 5px;
+            padding: 5px;
+            float: right;
+          "
+        >
+          <div class="butt" style="margin: 5px; padding: 5px">
+            <input
+              type="button"
+              value="bottom"
+              id="nextbottom"
+              onclick="nextbottom()"
+            />
+          </div>
+          <div class="butt">
+            <input
+              type="button"
+              value="accessory"
+              id="nextacc"
+              onclick="nextacc()"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
