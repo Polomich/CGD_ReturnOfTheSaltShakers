@@ -6,18 +6,30 @@
     <script src="controls.js"></script>
   </head>
 
-  <body style="background-color: blue; position: relative">
-    <section
-      id="thegame"
-      style="height: 100%; width: 100%; background-color: pink"
-    >
+  <!-- Color palette
+  B730A4 
+  C2EE26
+  012FBD
+  007DF5
+  02AAF3
+  01CAE6
+  00E1DB
+-->
+
+  <body style="background-color: #012fbd; position: relative">
+    <section id="thegame" style="height: 100%; width: 100%">
       <div
         id="title"
         style="
           margin-left: auto;
           margin-right: auto;
           text-align: center;
-          color: turquoise;
+          color: #c2ee26;
+          font-size: 30px;
+          width: 50%;
+          border: solid #02aaf3 2px;
+          border-radius: 80px;
+          margin-bottom: 10px;
         "
       >
         <h1>Dress up Bubbleguy</h1>
@@ -25,37 +37,37 @@
       <div
         id="gamewindow"
         style="
-          width: 50%;
-          height: 100%;
-          /* padding: 20px; */
-          background-color: green;
+          width: 50vw;
+          height: 60vh;
+          background-color: #01cae6;
           position: absolute;
-          padding: 20px;
-          left: 25%;
+          left: 25vw;
         "
       >
-        <div
-          id="thepics"
-          style="
-            /* width: 80%; 
-          height: auto;  */
-            background-color: pink;
-          "
-        >
-          <div id="ogmiss" style="width: 100%">
+        <div id="thepics">
+          <div style="width: 100%">
             <img
               src="images/bubbleguy.webp"
               alt="a bubbleguy"
-              style="width: 45%; position: absolute; z-index: 1"
+              style="width: 45%; position: absolute; z-index: 1; padding: 15px"
             />
           </div>
 
-          <div style="width: 100%; background-color: red">
+          <div>
+            <img
+              src=""
+              alt=""
+              id="thetop"
+              style="width: 45%; position: absolute; z-index: 2; padding: 15px"
+            />
+          </div>
+
+          <div>
             <img
               src=""
               alt=""
               id="thebottom"
-              style="width: 45%; position: absolute; z-index: 2"
+              style="width: 45%; position: absolute; z-index: 2; padding: 15px"
             />
           </div>
 
@@ -64,7 +76,7 @@
               src=""
               alt=""
               id="theacc"
-              style="width: 45%; position: absolute; z-index: 2"
+              style="width: 45%; position: absolute; z-index: 2; padding: 15px"
             />
           </div>
         </div>
@@ -72,26 +84,28 @@
         <div
           id="controls"
           style="
-            background-color: brown;
-            margin: 5px;
-            padding: 5px;
+            background-color: #b730a4;
+            padding: 0px 30px;
             float: right;
+            height: 100%;
           "
         >
-          <div class="butt" style="margin: 5px; padding: 5px">
+          <div class="butt" style="margin: 10px 0px">
             <input
               type="button"
               value="bottom"
               id="nextbottom"
               onclick="nextbottom()"
+              style="font-size: 20px; width: 100%"
             />
           </div>
-          <div class="butt">
+          <div class="butt" style="margin: 10px 0px">
             <input
               type="button"
               value="accessory"
               id="nextacc"
               onclick="nextacc()"
+              style="font-size: 20px; width: 100%"
             />
           </div>
         </div>
