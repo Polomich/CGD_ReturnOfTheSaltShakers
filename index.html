@@ -57,8 +57,23 @@
             <img
               src=""
               alt=""
+              id="thehat"
+              style="
+                width: 45%;
+                position: absolute;
+                z-index: 6;
+                padding: 15px;
+                padding-top: 10px;
+              "
+            />
+          </div>
+
+          <div>
+            <img
+              src=""
+              alt=""
               id="thetop"
-              style="width: 45%; position: absolute; z-index: 2; padding: 15px"
+              style="width: 45%; position: absolute; z-index: 4; padding: 15px"
             />
           </div>
 
@@ -67,6 +82,15 @@
               src=""
               alt=""
               id="thebottom"
+              style="width: 45%; position: absolute; z-index: 3; padding: 15px"
+            />
+          </div>
+
+          <div>
+            <img
+              src=""
+              alt=""
+              id="theshoe"
               style="width: 45%; position: absolute; z-index: 2; padding: 15px"
             />
           </div>
@@ -76,7 +100,16 @@
               src=""
               alt=""
               id="theacc"
-              style="width: 45%; position: absolute; z-index: 2; padding: 15px"
+              style="width: 45%; position: absolute; z-index: 5; padding: 15px"
+            />
+          </div>
+
+          <div>
+            <img
+              src=""
+              alt=""
+              id="theacc2"
+              style="width: 45%; position: absolute; z-index: 6; padding: 15px"
             />
           </div>
         </div>
@@ -93,6 +126,24 @@
           <div class="butt" style="margin: 10px 0px">
             <input
               type="button"
+              value="hat"
+              id="nexthat"
+              onclick="nexthat()"
+              style="font-size: 20px; width: 100%"
+            />
+          </div>
+          <div class="butt" style="margin: 10px 0px">
+            <input
+              type="button"
+              value="top"
+              id="nexttop"
+              onclick="nexttop()"
+              style="font-size: 20px; width: 100%"
+            />
+          </div>
+          <div class="butt" style="margin: 10px 0px">
+            <input
+              type="button"
               value="bottom"
               id="nextbottom"
               onclick="nextbottom()"
@@ -102,9 +153,27 @@
           <div class="butt" style="margin: 10px 0px">
             <input
               type="button"
+              value="shoes"
+              id="nextshoe"
+              onclick="nextshoe()"
+              style="font-size: 20px; width: 100%"
+            />
+          </div>
+          <div class="butt" style="margin: 10px 0px">
+            <input
+              type="button"
               value="accessory"
               id="nextacc"
               onclick="nextacc()"
+              style="font-size: 20px; width: 100%"
+            />
+          </div>
+          <div class="butt" style="margin: 10px 0px">
+            <input
+              type="button"
+              value="accessory 2"
+              id="nextacc2"
+              onclick="nextacc2()"
               style="font-size: 20px; width: 100%"
             />
           </div>
